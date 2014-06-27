@@ -12,3 +12,4 @@ three.js test on firefox ( webgl only ) .
 07 : 40x40x40 cubes (64K) in a huge cube + adding FPS + fixing a rendering issue + optimizing code logic.<br/>
 08 : optimising rendering with buffergeometry + bumping + phong  on a primitive surface .<br/>
 09 : Understanding UV and terrain geometry with triangles , a 8 primitive test with no functions.<br/>
+10 : <b><u>1st goal done</b></u> : 2M Primitives rendered after refactoring 09 example.<br/>
