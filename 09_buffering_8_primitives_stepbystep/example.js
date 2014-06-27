@@ -162,6 +162,16 @@ function surface(height){
 		
 		
 		//=> uvs
+		// same pattern for one square .
+		// uvs[i+0]=uvs[i+1]=uvs[i+2]=uvs[i+5]=uvs[i+6]=uvs[i+9]=uvs[i+10]=uvs[i+11]=0;
+		// uvs[i+3]=uvs[i+4]=uvs[i+7]=uvs[i+8]=1;
+		// 1 vertex = 2 uvs ( 2D coord ) .
+		// 1 triangle = 3 vertices 
+		// 1 square = 2 triangles
+		// 1 surface = (x-1)*(z-1) squares
+		// 1 surface = 2*3*2*(x-1)*(z-1) = 12*(x-1)*(z-1) uvs
+		// test here = x=3, z=3 so uvs=48 .
+		
 		uvs[0]=0;			uvs[2]=0;			uvs[4]=1;
 		uvs[1]=0;			uvs[3]=1;			uvs[5]=0;
 		
