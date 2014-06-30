@@ -13,3 +13,5 @@ three.js test on firefox ( webgl only ) .
 08 : optimising rendering with buffergeometry + bumping + phong  on a primitive surface .<br/>
 09 : Understanding UV and terrain geometry with triangles , a 8 primitive test with no functions.<br/>
 10 : <b><u>1st goal done</b></u> : 2M Primitives rendered after refactoring 09 example.<br/>
+11 : code splitting . Preparing for more complex develelopments.
+12 : camera issues ( camera.lookAt vs OrbitControls.center ) , lights and Lambert texturing testing .
