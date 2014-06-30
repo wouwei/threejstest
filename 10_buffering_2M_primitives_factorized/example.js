@@ -190,8 +190,8 @@ function render() {
 
 function animate() {
 	requestAnimationFrame(animate);
-	controls.update();
 	render();
+	controls.update();
 	stats.update();
 }
 
