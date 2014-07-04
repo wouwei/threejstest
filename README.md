@@ -15,5 +15,6 @@ three.js test on firefox ( webgl only ) .
 10 : <b><u>1st goal done</b></u> : 2M Primitives rendered after refactoring 09 example.<br/>
 11 : code splitting . Preparing for more complex developments.<br/>
 12 : camera issues ( camera.lookAt vs OrbitControls.center ) , lights and Lambert texturing testing .<br/>
-13 : moving an object with keys . Learning what is a prototype, making methods.. <br/>
-14 : <b><u>2d goal done</b></u> : chasing cam, getting rid of Orbitcontroller.js dependency .<br/>
+13 : moving an object with keys . <br/>
+14 : refactoring spritelight.js : on same time learning what is a prototype + applying methods ,etc ... <br/>
+15 : <b><u>2d goal done</b></u> : chasing cam, getting rid of Orbitcontroller.js dependency, making mouseState.js .<br/>
