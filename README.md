@@ -20,6 +20,6 @@ three.js test on firefox ( webgl only ) .
 15 : <b><u>2d goal done</b></u> : chasing cam, getting rid of Orbitcontroller.js dependency, making mouseState.js .<br/>
 16 : applying diamonsquare terrain generation <br/>
 17 : nodejs basics : how modules and require works <br/>
-18 : nodejs basics : dom manipulation via require failure <br/>
+18 : nodejs basics : dom manipulation via require failure : understanding require logic <br/>
 19 : nodejs basics : copying a chat example using ONLY socketIO ( websocket mastering ) -- NO frameworks<br/>
 20 : nodejs websocket : refactoring 19 + testing bootstrap + using jquery + creating a module <br/>
