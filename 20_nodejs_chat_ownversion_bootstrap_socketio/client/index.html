@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="http://nseydoux.eu:8080/socket.io/socket.io.js"></script>
+	<script src="http://nseydoux.eu:8080/bootstrap.js"></script>
+	<script src="http://nseydoux.eu:8080/jquery.js"></script>
+	<script src="http://nseydoux.eu:8080/chat.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://nseydoux.eu:8080/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://nseydoux.eu:8080/chat.css">
+</head>
+<body>
+
+<!-- Login here -->
+<div id="login">
+	<div class="bg-primary" id="login-title">
+		<center>Welcome !</center>
+	</div>
+	<form class="form-inline">
+		<div class="login-line"></div>
+		<center><input type="text" class="form-control" placeholder="Type your nickname" id="name" ></center>
+		<div class="login-line"></div>
+		<center><input type="button" class="btn btn-primary" name="join" value="Join" id="join"></center>
+	</form>
+	
+</div>
+
+
+
+<!-- Chat here -->
+<div class="container-fluid " id="chat">
+	<div class="row " >
+		<div class="col-md-11 bg-primary logo-logout" id="logo"><h2>MyLittleChat</h2></div>
+		<div class="col-md-1 btn-warning logo-logout" id="logout"><h3>Logout</h3></div>
+	</div>
+	<div class="row" >
+		<div class="col-md-3 bg-info pple-chat" id="people"></div>
+		<div class="cold-md-9 pple-chat" id="talkboard"></div>
+	</div>
+	<div class="row">
+		<form class="form-inline" id="2">
+			<div class="col-md-11 input-send">
+				<input type="text" class="form-control" placeholder="Type your message here" name="msg" id="msg">
+			</div>
+			<div class="col-md-1 input-send">
+				<input type="button" class="btn btn-success" value="Send" id="send">
+			</div>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>

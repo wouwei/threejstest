@@ -1,0 +1,46 @@
+
+/* login logic */
+#login {
+	border : solid 1px black;
+	height : 30vh;
+	width : 20vw;
+	margin : 30vh 40vw ;
+	padding : 0px;
+}
+
+#login-title {
+	font-size : 36px;
+	height : 10vh;
+	line-height : 10vh;
+}
+
+.login-line {
+	min-height : 4vh;
+}
+#name {
+	width : 90%;
+	}
+	
+#join {
+	
+}
+
+
+/* the chat logic */
+
+.logo-logout {
+	min-height : 10vh;
+}
+
+
+.pple-chat {
+	min-height : 85vh;
+}
+
+.input-send {
+	min-height : 2vh;
+}
+
+#msg {
+	width : 100%;
+}
