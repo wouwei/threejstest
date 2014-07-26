@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	// default 
-	var socket = io.connect('www.nseydoux.eu:8080');
+	var socket = io.connect('127.0.0.1:8080');
 	var ready,name;
 	$("#chat").hide();
 	$("#name").focus();
