@@ -24,4 +24,4 @@ three.js test on firefox ( webgl only ) .
 19 : nodejs basics : copying a chat example using ONLY socketIO ( websocket mastering ) -- NO frameworks<br/>
 20 : nodejs websocket : refactoring 19 + testing bootstrap + using jquery + creating a module <br/>
 21,22,23,24,25 : threejs in nodejs failed attempts.... not shown <br/>
-26 : <b><u>3d Goal</b></u>threejs in nodejs : rotating cube , created in the server , rendered by the client<br/>
+26 : <b><u>3d Goal</b></u> threejs in nodejs : rotating cube , created in the server , rendered by the client<br/>
