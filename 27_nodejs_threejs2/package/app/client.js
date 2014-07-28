@@ -52,7 +52,7 @@ function rotate(cube) {
 function Create(assets) {
 	for (var key in assets) {
 		
-		//MESHES
+		//* MESHES *//
 		
 		
 		if(assets[key].type=="Mesh") 
@@ -60,7 +60,8 @@ function Create(assets) {
 				
 				// material
 				link=assets[key].material;
-				if(link.type=="MeshLambertMaterial") material= new THREE.MeshLambertMaterial();
+				
+				if(link.type=="MeshLambertMaterial") {material= new THREE.MeshLambertMaterial();}
 				if(link.type=="MeshBasicMaterial") material= new THREE.MeshBasicMaterial(); 
 				
 				
@@ -75,8 +76,7 @@ function Create(assets) {
 				
 				// geometry
 				link=assets[key].geometry;
-				if(link.type=="CubeGeometry") geometry= new THREE.CubeGeometry(1,1,1);
-				
+				if(link.type=="BoxGeometry") geometry= new THREE.BoxGeometry(1,1,1);
 				element[key]=new THREE.Mesh(geometry,material);
 				
 				if(link.width) element[key].scale.x=link.width;
@@ -84,6 +84,7 @@ function Create(assets) {
 				if(link.depth) element[key].scale.z=link.depth;
 				
 				//position
+				link=assets[key].position;
 				if(link.posX) element[key].position.x=link.posX;
 				if(link.posY) element[key].position.y=link.posY;
 				if(link.posZ) element[key].position.z=link.posZ;
@@ -91,16 +92,23 @@ function Create(assets) {
 		
 
 		
-		// LIGHTS
-		if(assets[key].type=="PointLight")
+		//* LIGHTS *//
+		
+		// POINTLIGHT
+		if(assets[key].type=="PointLight") // INCOMPLETE
 			{	
+				// definition
 				link=assets[key];
 				element[key]=new THREE.PointLight();
 				
 				if(link.color) element[key].color.setHex(link.color);
-				if(link.posX) element[key].position.x=link.posX;
-				if(link.posY) element[key].position.y=link.posY;
-				if(link.posZ) element[key].position.z=link.posZ;
+				
+				// position
+				link=assets[key].position;
+				
+				if(link.x) element[key].position.x=link.x;
+				if(link.y) element[key].position.y=link.y;
+				if(link.z) element[key].position.z=link.z;
 				
 			}
 		
